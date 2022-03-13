@@ -1,20 +1,65 @@
 package com.github.PedroAntonio;
 
-
 public class Programa {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		ContaBancaria conta1 = new ContaBancariaPJ("João da Silva", 789.99, "123456", "PJ", 3);
+		ContaBancaria conta2 = new ContaBancariaPJ("João da Silva", 789.99, "123456", "PF", 3);
+		ContaBancaria conta3 = new ContaBancariaPJ("João da Silva", 789.99, "123456", "PR", 3);
 		
-		Conta conta1 = new Conta("Maria Joana", 100.00, "123456", "PF", 0);
-//		conta1.Sacar(100.0);
-		for(int i = 0; i < 5; i++) {
-			System.out.println("Sacou:" + (conta1.Sacar(100.0))); 
-		}
-//		conta1.Depositar(100.0);
-		for(int i = 0; i < 5; i++) {
-			System.out.println("Depositou " + (conta1.Depositar(100.0)));
-		}
+		System.out.println("===========================");
+		System.out.println("Criando conta");
+		System.out.println("===========================");
+		System.out.println("Conta: " + conta1.numeroConta);
+		System.out.println("Titular: " + conta1.Nome);
+		System.out.println("Tipo: " + conta1.tipoConta);
+		System.out.println("Saldo: " + conta1.saldo);		
+		
+		
+		conta1.Depositar(100.0); 
+		System.out.println("===========================");
+		System.out.println("Deposito");
+		System.out.println("===========================");
+		System.out.println("Conta: " + conta1.numeroConta);
+		System.out.println("Titular: " + conta1.Nome);
+		System.out.println("Tipo: " + conta1.tipoConta);
+		System.out.println("Saldo: " + conta1.saldo);
+		
+		
+		conta1.Sacar(500.0);
+		System.out.println("===========================");
+		System.out.println("Saque 1");
+		System.out.println("===========================");
+		System.out.println("Conta: " + conta1.numeroConta);
+		System.out.println("Titular: " + conta1.Nome);
+		System.out.println("Tipo: " + conta1.tipoConta);
+		System.out.println("Saldo: " + conta1.saldo);
+		
+		conta1.Sacar(500.0);
+		System.out.println("===========================");
+		System.out.println("Saque 2");
+		System.out.println("===========================");
+		System.out.println("Conta: " + conta1.numeroConta);
+		System.out.println("Titular: " + conta1.Nome);
+		System.out.println("Tipo: " + conta1.tipoConta);
+		System.out.println("Saldo: " + conta1.saldo);
+		
+		conta1.Sacar(500.0);
+		System.out.println("===========================");
+		System.out.println("Saque 3");
+		System.out.println("===========================");
+		System.out.println("Conta: " + conta1.numeroConta);
+		System.out.println("Titular: " + conta1.Nome);
+		System.out.println("Tipo: " + conta1.tipoConta);
+		System.out.println("Saldo: " + conta1.saldo);
+		
+		conta1.Sacar(500.0); 
+		System.out.println("===========================");
+		System.out.println("Saque 4");
+		System.out.println("===========================");
+		System.out.println("Conta: " + conta1.numeroConta);
+		System.out.println("Titular: " + conta1.Nome);
+		System.out.println("Tipo: " + conta1.tipoConta);
+		System.out.println("Saldo: " + conta1.saldo);
 	}
-
 }
